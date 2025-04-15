@@ -41,10 +41,23 @@
         }
 
         .card {
-            border: none; /* Remove default card border */
-            border-radius: 10px; /* Rounded corners for cards */
-            transition: transform 0.2s; /* Smooth transition for hover effect */
-        }
+    border: none; /* Remove default card border */
+    border-radius: 10px; /* Rounded corners for cards */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+    height: 100%; /* Ensure cards take full height of the container */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Space out content evenly */
+    height: 100%; /* Make card body take full height */
+}
+
+.card-img-top {
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensure images cover the area */
+}
 
         .card:hover {
             transform: scale(1.05); /* Slightly enlarge card on hover */
@@ -163,38 +176,7 @@ blockquote {
                     </div>
                 </div>
                 <!-- Additional carousel items can be added here -->
-                <div class="carousel-inner"></div>
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="https://i.pinimg.com/236x/cc/f4/e9/ccf4e975c5fcb45db852603a7424a860.jpg" class="card-img-top" alt="Featured Product 1">
-                                <div class="card-body">
-                                    <h5 class="card-title">Featured Product 1</h5>
-                                    <p class="card-text">P100.00</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="https://i.pinimg.com/474x/55/7c/55/557c558c16e5a7111bf7bfead1424a76.jpg" class="card-img-top" alt="Featured Product 2">
-                                <div class="card-body">
-                                    <h5 class="card-title">Featured Product 2</h5>
-                                    <p class="card-text">P110.00</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="https://i.pinimg.com/474x/3b/1d/0a/3b1d0a5b49790c700888260295ddb757.jpg" class="card-img-top" alt="Featured Product 3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Featured Product 3</h5>
-                                    <p class="card-text">P140.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+             
                 <!-- Additional carousel items can be added here -->
 
                 <div class="carousel-inner"></div>
